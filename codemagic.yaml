@@ -1,6 +1,6 @@
 workflows:
   ios-habit-tracker:
-    name: Velorunio iOS # Замініть на вашу назву, це для умовного обозначення білду.
+    name: Brethra iOS # Замініть на вашу назву, це для умовного обозначення білду.
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
@@ -13,12 +13,12 @@ workflows:
         release_type: SCHEDULED
     environment:
       ios_signing:
-        distribution_type: app_store # or: RemoteXAPI
-        bundle_identifier: com.vohniar.velorunio # Замініть на ваш фактичний bundle identifier
+        distribution_type: RemoteXAPI # or: RemoteXAPI
+        bundle_identifier: 	com.brethra.Brethra # Замініть на ваш фактичний bundle identifier
       vars:
-        BUNDLE_ID: "com.vohniar.velorunio" # Замініть на ваш фактичний bundle identifier
-        XCODE_PROJECT: "Velorunio.xcodeproj" # Замініть на ваш фактичну назву Xcode проекту
-        XCODE_SCHEME: "Velorunio" # Замініть на ваш фактичну назву Xcode схеми
+        BUNDLE_ID: "com.brethra.Brethra" # Замініть на ваш фактичний bundle identifier
+        XCODE_PROJECT: "Brethra.xcodeproj" # Замініть на ваш фактичну назву Xcode проекту
+        XCODE_SCHEME: "Brethra" # Замініть на ваш фактичну назву Xcode схеми
       xcode: 16.4
     scripts:
       - name: Set up provisioning profiles settings on Xcode project
