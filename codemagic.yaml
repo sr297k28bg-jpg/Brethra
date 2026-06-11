@@ -13,7 +13,7 @@ workflows:
         release_type: SCHEDULED
     environment:
       ios_signing:
-        distribution_type: RemoteXAPI # or: RemoteXAPI
+        distribution_type: app_store # or: RemoteXAPI
         bundle_identifier: 	com.brethra.Brethra # Замініть на ваш фактичний bundle identifier
       vars:
         BUNDLE_ID: "com.brethra.Brethra" # Замініть на ваш фактичний bundle identifier
