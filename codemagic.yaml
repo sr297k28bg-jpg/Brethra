@@ -14,7 +14,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store # or: RemoteXAPI
-        bundle_identifier: 	com.brethra.Brethra # Замініть на ваш фактичний bundle identifier
+        bundle_identifier: com.brethra.Brethra # Замініть на ваш фактичний bundle identifier
       vars:
         BUNDLE_ID: "com.brethra.Brethra" # Замініть на ваш фактичний bundle identifier
         XCODE_PROJECT: "Brethra.xcodeproj" # Замініть на ваш фактичну назву Xcode проекту
